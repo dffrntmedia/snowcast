@@ -2,13 +2,16 @@ package com.noctarius.snowcast;
 
 import com.hazelcast.core.Hazelcast;
 import com.hazelcast.core.HazelcastInstance;
+import org.junit.Ignore;
+import org.junit.Test;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
 public class EarthTodaySnowcastTest {
 
-    @org.junit.Test
+    @Ignore
+    @Test
     public void snowcastSequencerLifecycleTest() throws InterruptedException {
         HazelcastInstance hazelcastInstance = Hazelcast.newHazelcastInstance();
 
