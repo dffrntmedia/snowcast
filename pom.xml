@@ -25,12 +25,12 @@
 
   <distributionManagement>
     <snapshotRepository>
-      <id>earthtoday-snapshot</id>
-      <url>gs://earthtoday-packages/artifacts/earthtoday/snapshot</url>
+      <id>hearhear-snapshot</id>
+      <url>gs://hearhear-packages/artifacts/hearhear/snapshot</url>
     </snapshotRepository>
     <repository>
-      <id>earthtoday-release</id>
-      <url>gs://earthtoday-packages/artifacts/earthtoday/release</url>
+      <id>hearhear-release</id>
+      <url>gs://hearhear-packages/artifacts/hearhear/release</url>
     </repository>
   </distributionManagement>
 
@@ -322,15 +322,15 @@
 
   <repositories>
     <repository>
-      <id>earthtoday-snapshot</id>
-      <url>gs://earthtoday-packages/artifacts/earthtoday/snapshot</url>
+      <id>hearhear-snapshot</id>
+      <url>gs://hearhear-packages/artifacts/hearhear/snapshot</url>
       <snapshots>
         <enabled>true</enabled>
       </snapshots>
     </repository>
     <repository>
-      <id>earthtoday-release</id>
-      <url>gs://earthtoday-packages/artifacts/earthtoday/release</url>
+      <id>hearhear-release</id>
+      <url>gs://hearhear-packages/artifacts/hearhear/release</url>
     </repository>
   </repositories>
 </project>
