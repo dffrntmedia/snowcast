@@ -16,21 +16,21 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.noctarius.snowcast</groupId>
   <artifactId>snowcast</artifactId>
-  <version>3.0.0-EarthToday</version>
+  <version>3.0.1-DffrntLab</version>
   <description>snowcast is an auto-configuration, distributed, scalable ID generator on top of Hazelcast</description>
   <inceptionYear>2014</inceptionYear>
-  <url>http://github.com/noctarius/snowcast</url>
+  <url>http://github.com/dffrntmedia/snowcast</url>
   <packaging>bundle</packaging>
   <name>snowcast</name>
 
   <distributionManagement>
     <snapshotRepository>
-      <id>hearhear-snapshot</id>
-      <url>gs://hearhear-packages/artifacts/hearhear/snapshot</url>
+      <id>${company.name}-snapshot</id>
+      <url>gs://${company.name}-packages/artifacts/${company.name}/snapshot</url>
     </snapshotRepository>
     <repository>
-      <id>hearhear-release</id>
-      <url>gs://hearhear-packages/artifacts/hearhear/release</url>
+      <id>${company.name}-release</id>
+      <url>gs://${company.name}-packages/artifacts/${company.name}/release</url>
     </repository>
   </distributionManagement>
 
@@ -59,6 +59,7 @@
     <hazelcast.version>3.9</hazelcast.version>
     <timestamp>${maven.build.timestamp}</timestamp>
     <maven.build.timestamp.format>yyyy-MM-dd HH:mm</maven.build.timestamp.format>
+    <company.name>dffrntlab</company.name>
   </properties>
 
   <dependencies>
@@ -342,15 +343,15 @@
 
   <repositories>
     <repository>
-      <id>hearhear-snapshot</id>
-      <url>gs://hearhear-packages/artifacts/hearhear/snapshot</url>
+      <id>${company.name}-snapshot</id>
+      <url>gs://${company.name}-packages/artifacts/${company.name}/snapshot</url>
       <snapshots>
         <enabled>true</enabled>
       </snapshots>
     </repository>
     <repository>
-      <id>hearhear-release</id>
-      <url>gs://hearhear-packages/artifacts/hearhear/release</url>
+      <id>${company.name}-release</id>
+      <url>gs://${company.name}-packages/artifacts/${company.name}/release</url>
     </repository>
   </repositories>
 </project>

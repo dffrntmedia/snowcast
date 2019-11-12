@@ -2,15 +2,12 @@ package com.noctarius.snowcast;
 
 import com.hazelcast.core.Hazelcast;
 import com.hazelcast.core.HazelcastInstance;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
-public class EarthTodaySnowcastTest {
-
-    @Ignore
+public class DffrntLabSnowcastUseCaseTest {
     @Test
     public void snowcastSequencerLifecycleTest() throws InterruptedException {
         HazelcastInstance hazelcastInstance = Hazelcast.newHazelcastInstance();
@@ -23,11 +20,10 @@ public class EarthTodaySnowcastTest {
 
         SnowcastEpoch epoch = SnowcastEpoch.byInstant(calendar.toInstant());
 
-        SnowcastSequencer sequencer = snowcast.createSequencer("earthTodaySequencer", epoch);
+        SnowcastSequencer sequencer = snowcast.createSequencer("dffrntlLabSequencer", epoch);
 
         sequencer.next();
 
         snowcast.destroySequencer(sequencer);
-
     }
 }
