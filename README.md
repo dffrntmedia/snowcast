@@ -11,6 +11,7 @@
 The snowcast project is not sponsored or started by nor affiliated to Hazelcast, Inc. in any possible way. It is a spare-time project and Hazelcast, even though I'm employed by Hazelcast, does not offer any support to this project. There is also no commercial support, not at the current point in time. Apart from that I will give support in the best way possible.
 
 ## Table of Contents
+* [DffrntLab specifics](#dffrntlab-specifics)
 * [The Problem](#the-problem)
 * [Common Solutions](#common-solutions)
 * [So What's Now?](#so-whats-now)
@@ -29,6 +30,18 @@ The snowcast project is not sponsored or started by nor affiliated to Hazelcast,
 * [Migration and Split Brain](#migration-and-split-brain)
 * [Hazelcast Clients](#hazelcast-clients)
 * [Build Information](#build-information)
+
+### DffrntLab specifics
+
+It a version of Snowcast which is based on newer version of Hazelcast `3.9` with HTTP health checks.
+
+Integration of the Hazelcast `3.9` with Snowcast is implemented in [lukasherman/snowcast](https://github.com/lukasherman/snowcast).
+
+#### Deploy process
+
+- `gcloud config set project dffrntlab-prod`
+- `gcloud auth application-default login`
+- `mvn deploy`
 
 ### The Problem
 
